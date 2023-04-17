@@ -1,6 +1,7 @@
 import lombok.Getter;
+import lombok.Setter;
 
-@Getter
+@Getter @Setter
 public class Partido{
 
     private String equipoLocal, equipoVisitante, ronda;
@@ -15,6 +16,7 @@ public class Partido{
     public String toString() {
         return  equipoLocal + " " +  equipoVisitante + " " + golesLocal + " " + golesVisitante;
     }
+
     public int resultadoPerSe(){            //cada partido sabe su resultado
         if (golesLocal > golesVisitante) {
             return 1;
@@ -23,8 +25,17 @@ public class Partido{
         } else {
             return 0;
         }
-
     }
+
+    public int resultadoSegunPuntaje(int puntosGanador, int puntosEmpate) { //entra por parametro el valor y sale pro return
+        if (golesLocal > golesVisitante)
+            return puntosGanador;
+         else if (golesVisitante == golesLocal)
+            return puntosEmpate;
+         else return 0; //esto es para que si no se cumple el if o else if devuelva algo el metodo
+    }
+
+
 
 
 }

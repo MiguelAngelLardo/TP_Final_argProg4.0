@@ -17,6 +17,7 @@ public class Main {
 
             Partido nuevo = new Partido(equipoLocal, equipoVisitante, golesLocal, golesVisitante, ronda);
             campeonatoActual.agregarPartido(nuevo);
+            System.out.println("1");
         }
         conn.close(); rs.close();
 
@@ -24,16 +25,17 @@ public class Main {
         Statement st2 = conn2.createStatement();
         ResultSet rs2 = st2.executeQuery("select * from Apuestas");
 
-        Boleta boletaActual = new Boleta(campeonatoActual); //aca uno las 2 listas.
+        Prode prodeActual = new Prode(campeonatoActual); //aca uno las 2 listas.
 
         while (rs2.next()){
             String nombre = rs2.getString("nombre");
             String equipoLocalApuesta = rs2.getString("equipolocal");
             String equipoVisitanteApuesta = rs2.getString("equipovisitante");
             int resultado = rs2.getInt("resultado");
+            System.out.println("hola");
             Apuesta nueva = new Apuesta(nombre, equipoLocalApuesta, equipoVisitanteApuesta,resultado);
-            boletaActual.agregarApuesta(nueva);
-            
+            prodeActual.agregarApuesta(nueva);
+            System.out.println("chau");
 
         }
         conn2.close(); rs2.close();
@@ -41,7 +43,7 @@ public class Main {
 
        // System.out.println(campeonatoActual);
 
-        String resultado = boletaActual.apuestasCorrectasPorParticipante();
+        String resultado = prodeActual.apuestasCorrectasPorParticipante();
         System.out.println(resultado);
 
 

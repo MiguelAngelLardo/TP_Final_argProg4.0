@@ -11,6 +11,12 @@ public class Apuesta {
         return nombre + ":";
     }
 
+    public boolean acertoResultado(Apuesta apuesta, Partido partido) {
+        int resultadoPartido = partido.resultadoPerSe();
+        int resultadoApuesta = apuesta.getResultado();
+        return resultadoPartido == resultadoApuesta;
+    }
+
 
 
 
