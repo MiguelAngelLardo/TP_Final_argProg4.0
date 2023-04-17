@@ -1,0 +1,11 @@
+mariana;paises bajos;Estados unidos;1
+mariana;francia;polonia;1
+mariana;paises bajos;argentina;0
+pedro;argentina;australia;1
+pedro;japon;croacia;0
+pedro;croacia;brasil;1
+juana;inglaterra;senegal;2
+juana;brasil;corea del sur;2
+juana;croacia;marruecos;1
+
+

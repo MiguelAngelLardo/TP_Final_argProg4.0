@@ -1,0 +1,16 @@
+Paises Bajos;3;1;Estados unidos
+Argentina;2;1;Australia
+Inglaterra;3;0;Senegal
+Francia;3;1;Polonia
+Japon;1;1;Croacia
+Brasil;4;1;Corea del Sur
+Marruecos;0;0;España
+Portugal;6;1;Suiza
+Paises Bajos;2;2;Argentina
+Inglaterra;1;2;Francia
+Croacia;1;1;Brasil
+Marruecos;1;0;Portugal
+Argentina;3;1;Croacia
+Francia;2;0;Marruecos
+Croacia;2;1;Marruecos
+Argentina;4;2;Francia
