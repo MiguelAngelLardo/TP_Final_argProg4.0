@@ -8,13 +8,8 @@ public class Partido{
     private int golesLocal, golesVisitante;
 
 
-
     public Partido(String equipoLocal, String equipoVisitante, int golesLocal, int golesVisitante, String ronda) {
         this.equipoLocal = equipoLocal; this.equipoVisitante = equipoVisitante; this.golesLocal = golesLocal; this.golesVisitante = golesVisitante; this.ronda = ronda;
-    }
-
-    public String toString() {
-        return  equipoLocal + " " +  equipoVisitante + " " + golesLocal + " " + golesVisitante;
     }
 
     public int resultadoPerSe(){            //cada partido sabe su resultado
@@ -27,13 +22,12 @@ public class Partido{
         }
     }
 
-    public int resultadoSegunPuntaje(int puntosGanador, int puntosEmpate) { //entra por parametro el valor y sale pro return
-        if (golesLocal > golesVisitante)
-            return puntosGanador;
-         else if (golesVisitante == golesLocal)
-            return puntosEmpate;
-         else return 0; //esto es para que si no se cumple el if o else if devuelva algo el metodo
+    public String toString() {
+        return  equipoLocal + " " +  equipoVisitante + " " + golesLocal + " " + golesVisitante;
     }
+
+
+
 
 
 

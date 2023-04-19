@@ -10,7 +10,11 @@ public class Campeonato { //  //guarda todos los partidos con el Array
         return listaDePartidos;
    }
 
-   @Override
+    public int cantidadFecha(){
+        return  listaDePartidos.size();
+    }
+
+    @Override
    public String toString(){
       String listado = "Campeonato: \n";
       for (Partido p: listaDePartidos)  //por cada partido de la LISTA-PARTIDO
@@ -24,41 +28,6 @@ public class Campeonato { //  //guarda todos los partidos con el Array
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-    public int cantidadFecha(){
-        return  listaDePartidos.size();
-    }
-
-
-  /* public int resultadoLocalvsVisitante (String equipoLocalBuscado, String equipoVisitanteBuscado){
-       int ganaLocal = 0, ganaVisitante = 0, empate = 0;
-       for(Partido p: listaDePartidos){
-           if (p.getEquipoLocal().equals(equipoLocalBuscado) && p.resultadoPerSe() == 1) {
-               ganaLocal++;
-           } else if (p.getEquipoVisitante().equals(equipoVisitanteBuscado) && p.resultadoPerSe() == 2) {
-               ganaVisitante++;
-           } else if (p.resultadoPerSe() == 0) {
-               empate++;
-           }
-       }
-       if (ganaLocal > ganaVisitante)
-           return 1;
-       else if (ganaLocal < ganaVisitante)
-           return 2;
-       else
-           return 0;
-
-   }*/
 
 
 
