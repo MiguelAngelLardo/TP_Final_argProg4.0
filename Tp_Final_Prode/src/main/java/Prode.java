@@ -23,7 +23,8 @@ public class Prode { //guarda a todos los apostadores
     }
     public String apuestasCorrectasPorParticipante() {
         HashMap<String, Integer> apuestasCorrectasPorParticipante = new HashMap<>(); //clave String para el nombre del apostador y el valor Integer para la cantidad de apuestas.
-
+        int maxPuntaje = 0;
+        String ganador = "";
 
         for (Apuesta ap : listaDeApuestas) {   //recorro cada apuesta de la lista
             for (Partido p : fecha.getListaDePartidos()) {  //por cada apuesta recorro la lista de partidos usando el get ya que la lista esta en otra clase
@@ -38,8 +39,15 @@ public class Prode { //guarda a todos los apostadores
         String resultadoFinal = "";
         for (String participante_X : apuestasCorrectasPorParticipante.keySet()) { //keyset devuelve todas las KEYS del mapa. en este caso es el String del nombre. KeySet asigna ese nombre a "participante_X"
             int apuestasCorrectas = apuestasCorrectasPorParticipante.get(participante_X); //toma el valor asociado a la clave(nombre) con el .get
-            resultadoFinal += participante_X + ": " + apuestasCorrectas + "\n"; //similar al toString del Tikcet con Items.
+            resultadoFinal += participante_X + ": " + apuestasCorrectas + "\n"; //similar al toString del Tikcet con Items. => el += guarda con un salto de linea cada STRING
+
+            if (apuestasCorrectas > maxPuntaje){
+                maxPuntaje = apuestasCorrectas;
+                ganador = participante_X;
+            }
         }
+
+        resultadoFinal += "\n\u001B[4mEl ganador fue\u001B[0m: \ud83c\udfc6 " + ganador.toUpperCase(); //al terminar todos los ciclos MUESTRO 1 VEZ SOLA este msj.
         return resultadoFinal;
 
     }

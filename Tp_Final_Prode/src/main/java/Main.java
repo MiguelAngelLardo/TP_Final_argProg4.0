@@ -60,8 +60,8 @@ public class Main {
 
         System.out.println(campeonatoActual);
 
-       // String resultado = prodeActual.apuestasCorrectasPorParticipante();
-        //System.out.println(resultado);
+        String resultado = prodeActual.apuestasCorrectasPorParticipante();
+       System.out.println(resultado);
 
 
 

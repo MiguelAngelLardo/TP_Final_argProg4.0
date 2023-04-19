@@ -16,11 +16,11 @@ public class Campeonato { //  //guarda todos los partidos con el Array
 
     @Override
    public String toString(){
-      String listado = "Campeonato: \n";
+      String listado = "\u001B[4mCampeonato\u001B[0m:\u26BD \n";
       for (Partido p: listaDePartidos)  //por cada partido de la LISTA-PARTIDO
         listado += p.toString() + "\n";       //el p. llama al toString que cree en Partido
 
-      listado += "Cantidad de partidos: " + listaDePartidos.size();
+      listado += "\n\u001B[4mCantidad de partidos\u001B[0m: " + listaDePartidos.size() + "\n";
       return listado;
    }
 

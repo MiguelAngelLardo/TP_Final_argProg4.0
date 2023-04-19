@@ -22,8 +22,9 @@ public class Partido{
         }
     }
 
-    public String toString() {
-        return  equipoLocal + " " +  equipoVisitante + " " + golesLocal + " " + golesVisitante;
+    public String toString() { //10s es que el string ocupa 10 caracteres, 2d es 2 caracteres de int)
+        return  String.format("| %-12s | %2d : %-2d | %-14s | %12s |",
+                equipoLocal,golesLocal, golesVisitante, equipoVisitante, ronda);
     }
 
 
