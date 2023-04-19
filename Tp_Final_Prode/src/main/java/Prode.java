@@ -36,7 +36,7 @@ public class Prode { //guarda a todos los apostadores
             }
         }
 
-        String resultadoFinal = "";
+        String resultadoFinal = "\u001B[4mParticipantes\u001B[0m:\n";
         for (String participante_X : apuestasCorrectasPorParticipante.keySet()) { //keyset devuelve todas las KEYS del mapa. en este caso es el String del nombre. KeySet asigna ese nombre a "participante_X"
             int apuestasCorrectas = apuestasCorrectasPorParticipante.get(participante_X); //toma el valor asociado a la clave(nombre) con el .get
             resultadoFinal += participante_X + ": " + apuestasCorrectas + "\n"; //similar al toString del Tikcet con Items. => el += guarda con un salto de linea cada STRING
@@ -47,7 +47,7 @@ public class Prode { //guarda a todos los apostadores
             }
         }
 
-        resultadoFinal += "\n\u001B[4mEl ganador fue\u001B[0m: \ud83c\udfc6 " + ganador.toUpperCase(); //al terminar todos los ciclos MUESTRO 1 VEZ SOLA este msj.
+        resultadoFinal += "\n\u001B[4mEl ganador fue\u001B[0m: \ud83c\udfc6 " + ganador.toUpperCase() + "\n"; //al terminar todos los ciclos MUESTRO 1 VEZ SOLA este msj.
         return resultadoFinal;
 
     }

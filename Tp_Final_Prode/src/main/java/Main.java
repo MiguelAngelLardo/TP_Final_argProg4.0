@@ -1,7 +1,11 @@
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import java.io.IOException;
+import java.nio.file.Paths;
 import java.sql.*;
 
 public class Main {
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) throws SQLException, IOException {
         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/Equipos?useSSL=false&allowPublicKeyRetrieval=true", "root", "root");
         Statement st = conn.createStatement();
         ResultSet rs = st.executeQuery("select * from Partidos");
@@ -58,11 +62,14 @@ public class Main {
         conn2.close(); rs2.close();
 
 
-        System.out.println(campeonatoActual);
-
+        System.out.println(campeonatoActual);//muestra el toString de Campeonato (que tiene el de Partido)
         String resultado = prodeActual.apuestasCorrectasPorParticipante();
-       System.out.println(resultado);
+        System.out.println(resultado);
 
+        //Json
+        ObjectMapper om = new ObjectMapper();
+        System.out.println (om.writerWithDefaultPrettyPrinter().writeValueAsString(campeonatoActual));
+        //om.writeValue(Paths.get("partidos.json").toFile(),campeonatoActual);
 
 
 

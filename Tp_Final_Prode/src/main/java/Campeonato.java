@@ -1,5 +1,8 @@
+import lombok.Getter;
+
 import java.util.ArrayList;
 
+@Getter //le hago Get para que el jason lo pueda leer => asi fabrica un get listaDePartidos
 public class Campeonato { //  //guarda todos los partidos con el Array
    private ArrayList<Partido> listaDePartidos;
    public Campeonato(){
