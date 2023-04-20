@@ -1,16 +1,33 @@
-Paises Bajos;3;1;Estados unidos
-Argentina;2;1;Australia
-Inglaterra;3;0;Senegal
-Francia;3;1;Polonia
-Japon;1;1;Croacia
-Brasil;4;1;Corea del Sur
-Marruecos;0;0;España
-Portugal;6;1;Suiza
-Paises Bajos;2;2;Argentina
-Inglaterra;1;2;Francia
-Croacia;1;1;Brasil
-Marruecos;1;0;Portugal
-Argentina;3;1;Croacia
-Francia;2;0;Marruecos
-Croacia;2;1;Marruecos
-Argentina;4;2;Francia
+Argentina;4;2;Francia;Final
+Croacia;2;1;Marruecos;Tercer lugar
+Argentina;3;0;Croacia;Semifinal
+Francia;2;0;Marruecos;Semifinal
+Argentina;4;3;Paises Bajos;Cuartos
+Francia;2;1;Inglaterra;Cuartos
+Marruecos;1;0;Portugal;Cuartos
+Croacia;4;2;Brasil;Cuartos
+Paises Bajos;3;1;Estados Unidos;Octavos
+Argentina;2;1;Australia;Octavos
+Francia;3;1;Polonia;Octavos
+Inglaterra;3;0;Senegal;Octavos
+Japon;1;3;Croacia;Octavos
+Brasil;4;1;Corea del Sur;Octavos
+Marruecos;3;0;España;Octavos
+Portugal;6;1;Suiza;Octavos
+Ecuador;1;2;Senegal;Grupo A
+Paises Bajos;2;0;Catar;Grupo A
+Iran;0;1;Estados Unidos;Grupo B
+Gales;0;3;Inglaterra;Grupo B
+Polonia;0;2;Argentina;Grupo C
+Polonia;2;0;Arabia Saudita;Grupo C
+Francia;2;1;Dinamarca;Grupo D
+Australia;1;0;Dinamarca;Grupo D
+Japon;2;1;España;Grupo E
+España;7;0;Costa Rica;Grupo E
+Croacia;4;1;Canada;Grupo F
+Canada;1;2;Marruecos;Grupo F
+Serbia;2;3;Suiza;Grupo G
+Brasil;1;0;Suiza;Grupo G
+Portugal;2;0;Uruguay;Grupo H
+Uruguay;0;0;Corea del Sur;Grupo H
+Brasil;0;2;Suiza;Grupo Z

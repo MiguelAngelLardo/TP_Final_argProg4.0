@@ -12,11 +12,9 @@ public class Campeonato { //  //guarda todos los partidos con el Array
    public ArrayList<Partido> getListaDePartidos() {
         return listaDePartidos;
    }
-
     public int cantidadFecha(){
         return  listaDePartidos.size();
     }
-
     @Override
    public String toString(){
       String listado = "\u001B[4mCampeonato\u001B[0m:\u26BD \n";
