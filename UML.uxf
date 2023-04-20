@@ -1,0 +1,34 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>160</x><y>70</y><w>260</w><h>150</h></coordinates><panel_attributes>Partido
+--
+-equipoLocal: String
+-equipoVisitante: String
+-golesLocal: int
+-golesVisitante: int
+-ronda: String
+--
++Partido(String, String, String, int, int)
++resultadoPerSe(): int
++toString(): String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>210</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>150</x><y>310</y><w>270</w><h>130</h></coordinates><panel_attributes>Campeonato
+-
+ - listaDePartidos: ArrayList&lt;Partido&gt;
+-
++Campeonato()                          
++ agregarPartido(nuevo: Partido): void  
++ getListaDePartidos(): ArrayList&lt;Partido&gt; 
++ cantidadFecha(): int                  
++ toString(): String </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>70</y><w>210</w><h>150</h></coordinates><panel_attributes>Apuesta
+-
+-nombre: String
+-equipoLocal: String
+-equipoVisitante: String
+-ronda: String
+-resultado: int
+-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>210</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>310</y><w>270</w><h>130</h></coordinates><panel_attributes>Prode
+-
+- listaDeApuestas: ArrayList&lt;Apuesta&gt;   
+- fecha: Campeonato                           
+-
++ Prode(fecha: Campeonato)                     
++ agregarApuesta(nueva: Apuesta): void         
++ apuestasCorrectasPorParticipante(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>410</x><y>370</y><w>180</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;160;10</additional_attributes></element></diagram>
