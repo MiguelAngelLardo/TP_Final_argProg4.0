@@ -20,7 +20,6 @@ public class LectorDeArchivo {
         conn.close(); rs.close();
         return campeonatoActual;
     }
-
     public static Prode leerApuestasDesdeDB(Campeonato campeonatoActual)throws SQLException{
         Connection conn2 = DriverManager.getConnection("jdbc:mysql://localhost/Equipos?useSSL=false&allowPublicKeyRetrieval=true", "root", "root");
         Statement st2 = conn2.createStatement();
@@ -39,10 +38,6 @@ public class LectorDeArchivo {
         }
         conn2.close(); rs2.close();
         return prodeActual;
-
-
-
-
     }
 
 

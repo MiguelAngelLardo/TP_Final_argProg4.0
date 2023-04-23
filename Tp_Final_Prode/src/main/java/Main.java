@@ -65,8 +65,6 @@ public class Main {
         ObjectMapper om2 = new ObjectMapper();
         //System.out.println(om2.writerWithDefaultPrettyPrinter().writeValueAsString(prodeActual));
         //om.writerWithDefaultPrettyPrinter().writeValue(Paths.get("apuestas.json").toFile(), prodeActual);
-
-
     }
 }
 

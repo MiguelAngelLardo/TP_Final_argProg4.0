@@ -1,14 +1,12 @@
 import lombok.Getter;
-
 import java.util.ArrayList;
-
-@Getter //le hago Get para que el jason lo pueda leer => asi fabrica un get listaDePartidos
-public class Campeonato { //  //guarda todos los partidos con el Array
+@Getter
+public class Campeonato {
    private ArrayList<Partido> listaDePartidos;
    public Campeonato(){
        listaDePartidos = new ArrayList<>();
    }
-   public void agregarPartido (Partido nuevo){listaDePartidos.add(nuevo);}// aca empieza la COMPOSICION
+   public void agregarPartido (Partido nuevo){listaDePartidos.add(nuevo);}
    public ArrayList<Partido> getListaDePartidos() {
         return listaDePartidos;
    }
@@ -18,19 +16,10 @@ public class Campeonato { //  //guarda todos los partidos con el Array
     @Override
    public String toString(){
       String listado = "\u001B[4mCampeonato\u001B[0m:\u26BD \n";
-      for (Partido p: listaDePartidos)  //por cada partido de la LISTA-PARTIDO
-        listado += p.toString() + "\n";       //el p. llama al toString que cree en Partido
+      for (Partido p: listaDePartidos)
+        listado += p.toString() + "\n";
 
       listado += "\n\u001B[4mCantidad de partidos\u001B[0m: " + listaDePartidos.size() + "\n";
       return listado;
    }
-
-
-
-
-
-
-
-
-
 }
