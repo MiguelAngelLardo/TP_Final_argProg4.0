@@ -3,7 +3,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.sql.*;
-
+import java.nio.file.*;
+import java.util.Scanner;
+import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws SQLException, IOException {
         Campeonato campeonatoActual = LectorDeArchivo.leerPartidosDesdeBD();
@@ -45,10 +47,11 @@ public class Main {
             String equipoVisitanteApuesta = lector2.next();
             int resul = lector2.nextInt();
             String rondaApuesta = lector2.next();
-            Auesta nueva = new Apuesta(nombre, equipoLocalApuesta, equipoVisitanteApuesta,rondaApuesta, resul);
+            Apuesta nueva = new Apuesta(nombre, equipoLocalApuesta, equipoVisitanteApuesta,rondaApuesta, resul);
             prodeActual.agregarApuesta(nueva);
         }
-        lector2.close();*/
+        lector2.close();
+        */
 
         System.out.println(campeonatoActual);//muestra el toString de Campeonato (que tiene el de Partido)
         String resultado = prodeActual.apuestasCorrectasPorParticipante();
