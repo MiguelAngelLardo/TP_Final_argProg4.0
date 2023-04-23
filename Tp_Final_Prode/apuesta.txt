@@ -1,0 +1,14 @@
+mariana;Ecuador;Senegal;2;Grupo A
+mariana;paises bajos;catar;1;Octavos
+pedro;argentina;paises bajos;1;cuartos
+pedro;francia;inglaterra;1;cuartos
+pedro;marruecos;portugal;1;cuartos
+pedro;croacia;brasil;1;cuartos
+juan;uruguay;corea del Sur;0;Grupo H
+juan;portugal;Uruguay;1;Grupo H
+sergio;brasil;suiza;1;Grupo H
+mariana;paises bajos;catar;1;Octavos
+sergio;brasil;suiza;2;Grupo Z
+
+
+
