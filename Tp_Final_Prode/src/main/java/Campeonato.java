@@ -6,7 +6,9 @@ public class Campeonato {
    public Campeonato(){
        listaDePartidos = new ArrayList<>();
    }
-   public void agregarPartido (Partido nuevo){listaDePartidos.add(nuevo);}
+   public void agregarPartido (Partido nuevo){
+       listaDePartidos.add(nuevo);
+   }
    public ArrayList<Partido> getListaDePartidos() {
         return listaDePartidos;
    }

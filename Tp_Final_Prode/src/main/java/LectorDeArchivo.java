@@ -33,6 +33,7 @@ public class LectorDeArchivo {
             String equipoVisitanteApuesta = rs2.getString("equipovisitante");
             int resul = rs2.getInt("resultado");
             String rondaApuesta = rs2.getString("ronda");
+
             Apuesta nueva = new Apuesta(nombre, equipoLocalApuesta, equipoVisitanteApuesta,rondaApuesta, resul);
             prodeActual.agregarApuesta(nueva);
         }
